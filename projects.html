@@ -64,10 +64,33 @@
             <div class="page-header">
                 <h1>Projects</h1>
             </div>
-            
-            
 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="kfebt.html"><h3 class="panel-title">Kalman Filter Ensemble-Based Tracker</h3></a>
+                </div>
+                <div class="panel-body">
+                    <div class="span4">
+                        <img style="float:left" src="images/kfebt/kfebt.png" height="160" width="300"/>
+                        
+                        <p> The colorKCF method fuses the result of two out-of-the box trackers, a mean-shift tracker that use color histogram (ASMS) and the kernelized correlation filter (KCF) by using a Kalman filter.</p>
+                        <p>The tracker works in prediction and correction cycles. First, a simple motion model predict the target next position, then, the trackers results are fused with the predicted position and the motion model is updated in the correction process. The fused result is the colorKCF output and is used as the trackers last position in the next frame. </p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a href="bmax.html"><h3 class="panel-title">Bag of max features</h3></a>
+                </div>
+                <div class="panel-body">
+                    <div class="span4">
+                        <img style="float:left" src="images/bmax/bmax.png" height="160" width="300"/>
+                        <p>image classification method based on bag of features, that needs less local features extracted for create a representative description of the image.</p>
+                        <p>The feature vector creation process of our approach is inspired in the cortex- like mechanisms used in ”Hierarchical Model and X” proposed by Riesenhuber & Poggio. Bag of Max Features(BMAX) works with the distance from each visual word to its nearest feature found in the image, instead of occurrence frequency of each word.</p>
+                    </div>
+                </div>
+            </div>
 
         </div> <!-- /container -->
 
